@@ -1,0 +1,38 @@
+@media screen and (max-width: 480px) {
+    .gradient-banner {
+        padding: 100px 15px 170px 15px;
+    }
+    .gradient-banner h2 {
+        font-size: 30px;
+    }
+    p, li, blockquote, label {
+        font-size: 14px !important;
+    }
+    #jumbotron-card .p-5 {
+        padding: 2rem !important;
+    }
+    .related h2 {
+        font-size: 36px;
+    }
+    .wrapperInfo h5 {
+        font-size: 1rem;
+    }
+    .wrapperInfo .row .col-12 .row .text {
+        padding: 1rem 1.5rem;
+    }
+    .timeline-carousel {
+        padding: 20px 5% 60px 5%;
+    }
+    .timeline-carousel h2 {
+        font-size: 36px;
+    }
+    .timeline-carousel__item-inner .year {
+        font-size: 28px;
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .card.card-form{
+        max-width: 300px;
+    }
+}

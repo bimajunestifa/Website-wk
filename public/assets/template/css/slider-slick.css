@@ -1,0 +1,109 @@
+.slick-cultivar .cardd {
+    width: 600px !important;
+    height: 300px !important;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-right: 35px;
+    margin-bottom: 25px;
+}
+
+.slick-cultivar .cardd .text{
+    width: 60%;
+}
+
+.slick-cultivar .cardd .text .desc {
+    font-size: 14px;
+}
+
+.slick-cultivar .cardd .image{
+    width: 40%;
+}
+
+.slick-cultivar .cardd .image img{
+    width: 100%;
+}
+  
+.slick-cultivar .slick-list .slick-track {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+  
+.slick-dots li.slick-active button::before {
+    color: #2e7eed !important;
+    opacity: 1;
+}
+  
+  
+@media (max-width: 767px) {
+    .slick-cultivar .cardd {
+      padding: 1.5rem;
+      width: 485px !important;
+    }
+    .slick-cultivar .cardd .text .catagory h5 {
+      font-size: 16px;
+    }
+    .slick-cultivar .cardd .text .name h4 {
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .slick-cultivar .cardd {
+      width: 445px !important;
+    }
+    .slick-cultivar .cardd .text .catagory h5 {
+      font-size: 16px;
+    }
+    .slick-cultivar .cardd .text .name h4 {
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slick-cultivar .cardd {
+      width: 400px !important;
+    }
+    .slick-cultivar .cardd .text .catagory h5 {
+      font-size: 15px;
+    }
+    .slick-cultivar .cardd .text .name h4 {
+      font-size: 16px;
+    }
+    .slick-cultivar .cardd .text .desc{
+      font-size: 11px;
+    }
+}
+  
+@media (max-width: 450px) {
+    .slick-cultivar .cardd {
+      width: 350px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .slick-cultivar .cardd {
+      width: 300px !important;
+    }
+    .slick-cultivar .cardd .text .catagory h5 {
+      font-size: 14px;
+    }
+    .slick-cultivar .cardd .text .name h4 {
+      font-size: 14px;
+    }
+}
+  
+@media (max-width: 330px) {
+    .slick-cultivar .cardd {
+      width: 270px !important;
+    }
+    .slick-cultivar .cardd .text .catagory h5 {
+      font-size: 12px;
+    }
+    .slick-cultivar .cardd .text .name h4 {
+      font-size: 14px;
+    }
+    .slick-cultivar .cardd .text .desc{
+      font-size: 9px;
+    }
+}
