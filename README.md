@@ -28,8 +28,8 @@ Ikuti langkah-langkah berikut agar seluruh kode, database, dan **seluruh aset fo
 
 ### 1. Clone Repository
 ```bash
-git clone <URL_REPOSITORY_ANDA>
-cd Landingpage_Sekolah
+git clone <URL_YGK_KAMU_COPY_INI_YAAAAAAAAAAAA>
+cd Website-wk
 ```
 
 ### 2. Install Dependensi PHP (Composer)
