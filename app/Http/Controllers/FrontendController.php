@@ -194,3 +194,4 @@ class FrontendController extends Controller
         return back()->with('success', 'Pesan Anda berhasil dikirim! Tim SMK Wikrama 1 Garut akan segera menghubungi Anda.');
     }
 }
+

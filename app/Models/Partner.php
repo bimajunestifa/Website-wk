@@ -13,6 +13,7 @@ class Partner extends Model
         'name',
         'category',
         'badge_text',
+        'description',
         'logo_url',
         'website',
         'order',
@@ -22,4 +23,5 @@ class Partner extends Model
         'order' => 'integer',
     ];
 }
+
 

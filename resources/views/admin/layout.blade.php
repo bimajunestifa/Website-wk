@@ -339,6 +339,14 @@
                         </a>
                     </li>
 
+                    <!-- Sekolah Teladan -->
+                    <li class="menu-item {{ request()->routeIs('admin.teladan.*') ? 'active' : '' }}">
+                        <a href="{{ route('admin.teladan.index') }}" class="menu-link">
+                            <i class="menu-icon bx bx-medal"></i>
+                            <div>Sekolah Teladan</div>
+                        </a>
+                    </li>
+
                     <!-- INTERAKSI -->
                     <li class="menu-header">
                         <span>Interaksi &amp; Masukan</span>
@@ -495,3 +503,6 @@
     @stack('scripts')
 </body>
 </html>
+
+
+

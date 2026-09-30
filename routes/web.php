@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\AdminFacilityController;
 use App\Http\Controllers\Admin\AdminCultureController;
 use App\Http\Controllers\Admin\AdminReportController;
 use App\Http\Controllers\Admin\AdminPartnerController;
+use App\Http\Controllers\Admin\AdminTeladanController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminMessageController;
 use App\Http\Controllers\Admin\AdminAchievementController;
@@ -113,6 +114,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         // Partners & Certifications
         Route::resource('partners', AdminPartnerController::class);
+        Route::resource('teladan', AdminTeladanController::class);
 
         // News & Articles
         Route::resource('news', AdminNewsController::class);
@@ -123,3 +125,4 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('/messages/{message}', [AdminMessageController::class, 'destroy'])->name('messages.destroy');
     });
 });
+

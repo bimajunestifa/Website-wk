@@ -1499,102 +1499,20 @@ Akhlakul Karimah					</p>
 <div class="elementor-element elementor-element-edc6451 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="edc6451" data-widget_type="heading.default">
 <h2 class="elementor-heading-title elementor-size-default">Sekolah Teladan Nasional</h2> </div>
 <div class="elementor-element elementor-element-bb3799f e-con-full e-grid e-con e-child" data-element_type="container" data-id="bb3799f" data-settings='{"background_background":"classic"}'>
-<div class="elementor-element elementor-element-2c9a7c1 e-con-full e-flex e-con e-child" data-element_type="container" data-id="2c9a7c1">
-<div class="elementor-element elementor-element-403e8b1 elementor-widget elementor-widget-image" data-element_type="widget" data-id="403e8b1" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-350" decoding="async" height="850" loading="lazy" src="/assets/images/2075806e32858ea6928fd608423c97dd2955b453-1024x870.png" width="1000"/> </div>
-<div class="elementor-element elementor-element-1bdebd3 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="1bdebd3" data-widget_type="text-editor.default">
-<p><strong>Juara 2 Nasional</strong></p><p>Pangan Jajan Anak Sehat Regional Barat</p><p> </p> </div>
+@forelse($partners as $p)
+<div class="elementor-element e-con-full e-flex e-con e-child" style="border: 1px solid #eee; padding: 20px 10px; justify-content: flex-start; align-items: center; border-radius: 8px;">
+<div class="elementor-element elementor-widget elementor-widget-image" style="width: 100%; text-align: center; margin-bottom: 15px;">
+<img src="{{ $p->logo_url ? asset(ltrim($p->logo_url, '/')) : '' }}" alt="{{ $p->name }}" style="max-height: 80px; object-fit: contain;"/>
 </div>
-<div class="elementor-element elementor-element-bd1368d e-con-full e-flex e-con e-child" data-element_type="container" data-id="bd1368d">
-<div class="elementor-element elementor-element-a908c8c elementor-widget elementor-widget-image" data-element_type="widget" data-id="a908c8c" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-413" decoding="async" height="80" loading="lazy" src="/assets/images/image-26.png" width="61"/> </div>
-<div class="elementor-element elementor-element-fe00d7d elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="fe00d7d" data-widget_type="text-editor.default">
-<p><strong>WORLDDIDAC ASIA 2025</strong></p><p>Kategori Innovation in <br/>Digital Education Development</p> </div>
-</div>
-<div class="elementor-element elementor-element-be3d5cb e-con-full e-flex e-con e-child" data-element_type="container" data-id="be3d5cb">
-<div class="elementor-element elementor-element-c6825f3 elementor-widget elementor-widget-image" data-element_type="widget" data-id="c6825f3" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-414" decoding="async" height="80" loading="lazy" src="/assets/images/image-27.png" width="80"/> </div>
-<div class="elementor-element elementor-element-cdc8516 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="cdc8516" data-widget_type="text-editor.default">
-<p><strong>Tersertifikasi</strong><br/><strong>Sekolah Sehat</strong></p><p>Kementrian Kesehatan</p> </div>
-</div>
-<div class="elementor-element elementor-element-eda8904 e-con-full e-flex e-con e-child" data-element_type="container" data-id="eda8904">
-<div class="elementor-element elementor-element-de77ca6 elementor-widget elementor-widget-image" data-element_type="widget" data-id="de77ca6" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-415" decoding="async" height="80" loading="lazy" src="/assets/images/image-31.png" width="80"/> </div>
-<div class="elementor-element elementor-element-043b0e6 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="043b0e6" data-widget_type="text-editor.default">
-<p><strong>Pusat Belajar</strong></p><p>BBPPMPV Bidang Mesin <br/>dan Teknik Industri</p> </div>
-</div>
-<div class="elementor-element elementor-element-643bc6b e-con-full e-flex e-con e-child" data-element_type="container" data-id="643bc6b">
-<div class="elementor-element elementor-element-ce7897e elementor-widget elementor-widget-image" data-element_type="widget" data-id="ce7897e" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-416" decoding="async" height="70" loading="lazy" src="/assets/images/image-31-1.png" width="81"/> </div>
-<div class="elementor-element elementor-element-5f0113e elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="5f0113e" data-widget_type="text-editor.default">
-<p><strong>IDS Rumah Pendidikan </strong><br/><strong>Indonesia</strong></p><p>Sebagai konsultan <br/>pendidikan</p> </div>
-</div>
-<div class="elementor-element elementor-element-774009f e-con-full e-flex e-con e-child" data-element_type="container" data-id="774009f">
-<div class="elementor-element elementor-element-bdfad83 elementor-widget elementor-widget-image" data-element_type="widget" data-id="bdfad83" data-widget_type="image.default">
-<img alt="" class="attachment-full size-full wp-image-417" decoding="async" height="80" loading="lazy" src="/assets/images/image-28.png" width="80"/> </div>
-<div class="elementor-element elementor-element-05841d9 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="05841d9" data-widget_type="text-editor.default">
-<p><strong>Akreditasi A+</strong></p><p>Badan Akreditasi<br/>Nasional – PDM</p> </div>
-</div>
-<div class="elementor-element elementor-element-27fee54 e-con-full e-flex e-con e-child" data-element_type="container" data-id="27fee54">
-<div class="elementor-element elementor-element-c87f2a5 elementor-widget elementor-widget-image" data-element_type="widget" data-id="c87f2a5" data-widget_type="image.default">
-<img alt="" class="attachment-full size-full wp-image-418" decoding="async" height="80" loading="lazy" src="/assets/images/image-29.png" width="80"/> </div>
-<div class="elementor-element elementor-element-612c831 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="612c831" data-widget_type="text-editor.default">
-<p><strong>Huawei ICT Academy</strong> </p><p>Partner bidang<br/>Artificial Intelegence</p> </div>
-</div>
-<div class="elementor-element elementor-element-777eff0 e-con-full e-flex e-con e-child" data-element_type="container" data-id="777eff0">
-<div class="elementor-element elementor-element-8f9ec50 elementor-widget elementor-widget-image" data-element_type="widget" data-id="8f9ec50" data-widget_type="image.default">
-<img alt="" class="attachment-full size-full wp-image-502" decoding="async" height="316" loading="lazy" src="/assets/images/45877038logomta.jpeg" width="900"/> </div>
-<div class="elementor-element elementor-element-2dceffa elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="2dceffa" data-widget_type="text-editor.default">
-<p><strong>Mikrotik Academy</strong></p><p>MikroTik Certified<br/>Network Associate</p> </div>
-</div>
-<div class="elementor-element elementor-element-d921a06 e-con-full e-flex e-con e-child" data-element_type="container" data-id="d921a06">
-<div class="elementor-element elementor-element-4e6e3a3 elementor-widget elementor-widget-image" data-element_type="widget" data-id="4e6e3a3" data-widget_type="image.default">
-<img alt="" class="attachment-full size-full wp-image-509" decoding="async" height="104" loading="lazy" src="/assets/images/EC-Council-Academia-Partner-logo.png" width="632"/> </div>
-<div class="elementor-element elementor-element-437fffa elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="437fffa" data-widget_type="text-editor.default">
-<p><strong>EC-Council Academia</strong></p><p>Kurikulum &amp; Sertifikasi<br/>Cyber Security</p> </div>
-</div>
-<div class="elementor-element elementor-element-74e1738 e-con-full e-flex e-con e-child" data-element_type="container" data-id="74e1738">
-<div class="elementor-element elementor-element-df18e95 elementor-widget elementor-widget-image" data-element_type="widget" data-id="df18e95" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-422" decoding="async" height="80" loading="lazy" src="/assets/images/image-31-2.png" width="60"/> </div>
-<div class="elementor-element elementor-element-64fef59 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="64fef59" data-widget_type="text-editor.default">
-<p><strong>Sekolah Sasaran</strong><br/><strong>Teaching Factory</strong></p><p>Direktorat Kemitraan <br/>dan Penyelarasan DUDI</p> </div>
-</div>
-<div class="elementor-element elementor-element-b307c1f e-con-full e-flex e-con e-child" data-element_type="container" data-id="b307c1f">
-<div class="elementor-element elementor-element-307a043 elementor-widget elementor-widget-image" data-element_type="widget" data-id="307a043" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-423" decoding="async" height="34" loading="lazy" src="/assets/images/image-3.png" width="121"/> </div>
-<div class="elementor-element elementor-element-1fdca33 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="1fdca33" data-widget_type="text-editor.default">
-<p><strong>Kejar.id</strong></p><p>Sebagai tool manajemen<br/>berbasis data &amp; LMS</p> </div>
-</div>
-<div class="elementor-element elementor-element-fb95923 e-con-full e-flex e-con e-child" data-element_type="container" data-id="fb95923">
-<div class="elementor-element elementor-element-47c562e elementor-widget elementor-widget-image" data-element_type="widget" data-id="47c562e" data-widget_type="image.default">
-<img alt="" class="attachment-full size-full wp-image-510" decoding="async" height="810" loading="lazy" src="/assets/images/Logo-SMK-Pusat-Keunggulan-SMK-PK.png" width="1020"/> </div>
-<div class="elementor-element elementor-element-8bd07a6 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="8bd07a6" data-widget_type="text-editor.default">
-<p><strong>Sekolah Pusat Keunggulan</strong></p><p>Kemdikdasmen 2025</p> </div>
-</div>
-<div class="elementor-element elementor-element-70398a8 e-con-full e-flex e-con e-child" data-element_type="container" data-id="70398a8">
-<div class="elementor-element elementor-element-d8ff5a2 elementor-widget elementor-widget-image" data-element_type="widget" data-id="d8ff5a2" data-widget_type="image.default">
-<img alt="" class="attachment-full size-full wp-image-426" decoding="async" height="60" loading="lazy" src="/assets/images/image-33.png" width="97"/> </div>
-<div class="elementor-element elementor-element-d7558ef elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="d7558ef" data-widget_type="text-editor.default">
-<p><strong>Amazon Web </strong><br/><strong>Services Educate</strong></p><p>Sertification Partner</p> </div>
-</div>
-<div class="elementor-element elementor-element-5ee8e06 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5ee8e06">
-<div class="elementor-element elementor-element-4d9dfea elementor-widget elementor-widget-image" data-element_type="widget" data-id="4d9dfea" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-425" decoding="async" height="50" loading="lazy" src="/assets/images/image-1.png" width="97"/> </div>
-<div class="elementor-element elementor-element-28f24a7 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="28f24a7" data-widget_type="text-editor.default">
-<p><strong>Google Workspace</strong></p><p>Pengelolaan Administrasi<br/>secara cloud</p> </div>
-</div>
-<div class="elementor-element elementor-element-fa2281d e-con-full e-flex e-con e-child" data-element_type="container" data-id="fa2281d">
-<div class="elementor-element elementor-element-1f53a81 elementor-widget elementor-widget-image" data-element_type="widget" data-id="1f53a81" data-widget_type="image.default">
-<img alt="" class="attachment-large size-large wp-image-432" decoding="async" height="247" loading="lazy" src="/assets/images/Screenshot-2025-10-13-221715.png" width="519"/> </div>
-<div class="elementor-element elementor-element-8d2c8cd elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="8d2c8cd" data-widget_type="text-editor.default">
-<p><strong>Teaching Factory</strong></p><p>Pembelajaran berbasis pabrik bernilai ekonomi</p> </div>
+<div class="elementor-element elementor-widget elementor-widget-text-editor" style="text-align: center; width: 100%;">
+<p style="margin-bottom: 5px;"><strong>{{ $p->badge_text ?: $p->name }}</strong></p>
+<p style="font-size: 0.9em; line-height: 1.4; margin: 0; color: #555;">{{ $p->description }}</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</main>
+@empty
+<div style="width: 100%; text-align: center; padding: 20px; color: #888;">Belum ada partner yang ditambahkan.</div>
+@endforelse
+</div></div></div></div></main>
 </article>
 </div><!-- #primary -->
 </div><!-- #content -->
@@ -1991,6 +1909,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
+
 
 
 

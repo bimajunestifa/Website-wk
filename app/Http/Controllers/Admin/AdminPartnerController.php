@@ -27,6 +27,7 @@ class AdminPartnerController extends Controller
             'category' => 'nullable|string|max:100',
             'website' => 'nullable|string|max:255',
             'badge_text' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
             'logo_file' => 'nullable|image|max:8192',
             'logo_url' => 'nullable|string',
             'order' => 'nullable|integer',
@@ -62,6 +63,7 @@ class AdminPartnerController extends Controller
             'category' => 'nullable|string|max:100',
             'website' => 'nullable|string|max:255',
             'badge_text' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
             'logo_file' => 'nullable|image|max:8192',
             'logo_url' => 'nullable|string',
             'order' => 'nullable|integer',
@@ -93,4 +95,5 @@ class AdminPartnerController extends Controller
         return redirect()->route('admin.partners.index')->with('success', 'Mitra berhasil dihapus!');
     }
 }
+
 
