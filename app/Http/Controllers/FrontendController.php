@@ -46,7 +46,7 @@ class FrontendController extends Controller
         $cultureCards = HomeFeatureCard::where('section', 'budaya')->where('is_active', true)->orderBy('order', 'asc')->get();
         $learningCards = HomeFeatureCard::where('section', 'pembelajar')->where('is_active', true)->orderBy('order', 'asc')->get();
 
-        return view('home', compact(
+        return view('beranda', compact(
             'sliders',
             'profile',
             'visionMission',
@@ -80,7 +80,7 @@ class FrontendController extends Controller
             $achievements = Achievement::orderBy('order', 'asc')->orderByDesc('created_at')->take(6)->get();
         }
 
-        return view('spmb', compact('sliders', 'profile', 'visionMission', 'majors', 'testimonials', 'achievements'));
+        return view('pendaftaran', compact('sliders', 'profile', 'visionMission', 'majors', 'testimonials', 'achievements'));
     }
 
     public function submitSpmbMessage(Request $request)
@@ -115,7 +115,7 @@ class FrontendController extends Controller
     {
         $profile = SchoolProfile::first();
         $majors = Major::where('is_active', true)->orderBy('order', 'asc')->get();
-        return view('majors', compact('profile', 'majors'));
+        return view('kompetensi_keahlian', compact('profile', 'majors'));
     }
 
     public function majorDetail($slug)
@@ -134,7 +134,7 @@ class FrontendController extends Controller
         $teachers = Teacher::where('is_active', true)->orderBy('order', 'asc')->get();
         $alumnis = Alumni::where('is_active', true)->orderBy('order', 'asc')->get();
         $testimonials = $alumnis;
-        return view('resources', compact('profile', 'facilities', 'galleries', 'teachers', 'alumnis', 'testimonials'));
+        return view('sumber_daya', compact('profile', 'facilities', 'galleries', 'teachers', 'alumnis', 'testimonials'));
     }
 
     public function culture()
@@ -146,7 +146,7 @@ class FrontendController extends Controller
         }
         $akhlakActivities = SchoolCulture::where('category', 'akhlak_activity')->orderBy('order', 'asc')->get();
         $visionMission = VisionMission::first();
-        return view('culture', compact('profile', 'cultures', 'akhlakActivities', 'visionMission'));
+        return view('budaya', compact('profile', 'cultures', 'akhlakActivities', 'visionMission'));
     }
 
     public function news(Request $request)
@@ -157,7 +157,7 @@ class FrontendController extends Controller
             $query->where('category', $request->kategori);
         }
         $news = $query->paginate(12);
-        return view('news', compact('profile', 'news'));
+        return view('berita', compact('profile', 'news'));
     }
 
     public function newsDetail($slug)
@@ -176,7 +176,7 @@ class FrontendController extends Controller
         $reports = EducationReport::orderBy('order', 'asc')->get();
         $partners = Partner::orderBy('order', 'asc')->get();
         $achievements = Achievement::orderBy('order', 'asc')->get();
-        return view('about', compact('profile', 'visionMission', 'reports', 'partners', 'achievements'));
+        return view('tentang_kami', compact('profile', 'visionMission', 'reports', 'partners', 'achievements'));
     }
 
     public function sendMessage(Request $request)

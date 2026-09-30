@@ -459,12 +459,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </a>
 </div>
 <div class="uicore-nav-menu">
-<div class="uicore-menu-container uicore-nav"><ul class="uicore-menu" data-uils="header-menu" data-uils-title="Navigation Menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-31"><a aria-current="page" href="{{ route('home') }}"><span class="ui-menu-item-wrapper">Beranda</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="{{ route('news') }}"><span class="ui-menu-item-wrapper">Berita</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="{{ route('majors') }}"><span class="ui-menu-item-wrapper">Kompetensi Keahlian</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="{{ route('resources') }}"><span class="ui-menu-item-wrapper">Sumber Daya</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="{{ route('culture') }}"><span class="ui-menu-item-wrapper">Budaya</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="{{ route('about') }}"><span class="ui-menu-item-wrapper">Tentang Kami</span></a></li>
+<div class="uicore-menu-container uicore-nav"><ul class="uicore-menu" data-uils="header-menu" data-uils-title="Navigation Menu"><li class="menu-item   menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-31"><a aria-current="page" href="{{ route('home') }}"><span class="ui-menu-item-wrapper">Beranda</span></a></li>
+<li class="menu-item   menu-item-32"><a href="{{ route('news') }}"><span class="ui-menu-item-wrapper">Berita</span></a></li>
+<li class="menu-item   menu-item-34"><a href="{{ route('majors') }}"><span class="ui-menu-item-wrapper">Kompetensi Keahlian</span></a></li>
+<li class="menu-item   menu-item-35"><a href="{{ route('resources') }}"><span class="ui-menu-item-wrapper">Sumber Daya</span></a></li>
+<li class="menu-item   menu-item-33"><a href="{{ route('culture') }}"><span class="ui-menu-item-wrapper">Budaya</span></a></li>
+<li class="menu-item   menu-item-36"><a href="{{ route('about') }}"><span class="ui-menu-item-wrapper">Tentang Kami</span></a></li>
 </ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras"> <div class="uicore-cta-wrapper">
 <a class="uicore-btn" href="{{ route('spmb') }}">
 <span class="elementor-button-text">
@@ -797,7 +797,7 @@ Guru, siswa, orang tua, dan mitra industri bersatu dalam visi mencetak generasi 
 </div>
 <div class="elementor-element elementor-element-7e429b8 e-flex e-con-boxed e-con e-parent" data-element_type="container" data-id="7e429b8" data-settings='{"background_background":"classic"}'>
 <div class="e-con-inner">
-<div class="elementor-element elementor-element-e908163 e-con-full e-flex e-con e-child" data-element_type="container" data-id="e908163">
+<div class="elementor-element elementor-element-e908163 e-con-full e-flex e-con e-child" data-element_type="container" data-id="e908163" style="justify-content: center !important;">
 @php
   $majorCardConfigs = [
     0 => ['cardId' => '2020537', 'imgBoxId' => 'a710cf7', 'imgId' => '1542df1', 'textBoxId' => '4416307', 'titleId' => '11ec4ce', 'textId' => '551f7ed'],
@@ -1750,12 +1750,12 @@ Akhlakul Karimah					</p>
 </div>
 </nav>
 <div class="uicore-navigation-content">
-<div class="uicore-menu-container uicore-nav"><ul class="uicore-menu" data-uils="header-menu" data-uils-title="Navigation Menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-31"><a aria-current="page" href="{{ route('home') }}"><span class="ui-menu-item-wrapper">Beranda</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="{{ route('news') }}"><span class="ui-menu-item-wrapper">Berita</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="{{ route('majors') }}"><span class="ui-menu-item-wrapper">Kompetensi Keahlian</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="{{ route('resources') }}"><span class="ui-menu-item-wrapper">Sumber Daya</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="{{ route('culture') }}"><span class="ui-menu-item-wrapper">Budaya</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="{{ route('about') }}"><span class="ui-menu-item-wrapper">Tentang Kami</span></a></li>
+<div class="uicore-menu-container uicore-nav"><ul class="uicore-menu" data-uils="header-menu" data-uils-title="Navigation Menu"><li class="menu-item   menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-31"><a aria-current="page" href="{{ route('home') }}"><span class="ui-menu-item-wrapper">Beranda</span></a></li>
+<li class="menu-item   menu-item-32"><a href="{{ route('news') }}"><span class="ui-menu-item-wrapper">Berita</span></a></li>
+<li class="menu-item   menu-item-34"><a href="{{ route('majors') }}"><span class="ui-menu-item-wrapper">Kompetensi Keahlian</span></a></li>
+<li class="menu-item   menu-item-35"><a href="{{ route('resources') }}"><span class="ui-menu-item-wrapper">Sumber Daya</span></a></li>
+<li class="menu-item   menu-item-33"><a href="{{ route('culture') }}"><span class="ui-menu-item-wrapper">Budaya</span></a></li>
+<li class="menu-item   menu-item-36"><a href="{{ route('about') }}"><span class="ui-menu-item-wrapper">Tentang Kami</span></a></li>
 </ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras"> <div class="uicore-cta-wrapper">
 <a class="uicore-btn" href="{{ route('spmb') }}">
 <span class="elementor-button-text">
@@ -1991,3 +1991,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+

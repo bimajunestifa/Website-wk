@@ -57,7 +57,7 @@
 	        $('html, body').stop().animate({
 	            scrollTop: (target.offset().top) - 130
 	        }, 500, 'swing', function () {
-	            window.location.hash = target;
+	            window.location.hash = menu;
 	            $(document).on("scroll", onScroll);
 	        });
 	    });

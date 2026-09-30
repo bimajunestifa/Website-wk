@@ -201,22 +201,22 @@
                         <div class='uicore-nav-menu'>
                             <div class="uicore-menu-container uicore-nav">
                                 <ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu">
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page {{ request()->routeIs('home') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
+                                    <li class="menu-item   {{ request()->routeIs('home') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
                                         <a href="{{ route('home') }}"><span class="ui-menu-item-wrapper">Beranda</span></a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page {{ request()->routeIs('news*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
+                                    <li class="menu-item   {{ request()->routeIs('news*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
                                         <a href="{{ route('news') }}"><span class="ui-menu-item-wrapper">Berita</span></a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page {{ request()->routeIs('major*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
+                                    <li class="menu-item   {{ request()->routeIs('major*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
                                         <a href="{{ route('majors') }}"><span class="ui-menu-item-wrapper">Kompetensi Keahlian</span></a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page {{ request()->routeIs('resources*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
+                                    <li class="menu-item   {{ request()->routeIs('resources*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
                                         <a href="{{ route('resources') }}"><span class="ui-menu-item-wrapper">Sumber Daya</span></a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page {{ request()->routeIs('culture*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
+                                    <li class="menu-item   {{ request()->routeIs('culture*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
                                         <a href="{{ route('culture') }}"><span class="ui-menu-item-wrapper">Budaya</span></a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page {{ request()->routeIs('about*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
+                                    <li class="menu-item   {{ request()->routeIs('about*') ? 'current-menu-item page_item current_page_item current_page_parent' : '' }}">
                                         <a href="{{ route('about') }}"><span class="ui-menu-item-wrapper">Tentang Kami</span></a>
                                     </li>
                                 </ul>
@@ -496,4 +496,5 @@
     @stack('scripts')
 </body>
 </html>
+
 
