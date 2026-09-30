@@ -99,7 +99,7 @@
                     </label>
                     <span class="text-[11px] text-gray-500">Gunakan toolbar untuk sub-judul, teks tebal, &amp; poin list</span>
                 </div>
-                <textarea name="content" id="article_content_input" class="hidden" required>{{ old('content', $news->content) }}</textarea>
+                <textarea name="content" id="article_content_input" class="hidden">{{ old('content', $news->content) }}</textarea>
                 <div id="quill-editor" class="bg-white">
                     {!! old('content', $news->formatted_content ?: $news->content) !!}
                 </div>
@@ -174,3 +174,5 @@
     });
 </script>
 @endpush
+
+

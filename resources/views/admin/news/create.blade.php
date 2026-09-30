@@ -47,7 +47,17 @@
     <div class="bg-white rounded-3xl border border-gray-200 shadow-sm p-8">
         <h2 class="text-xl font-black text-gray-900 mb-6">Formulir Publikasi Berita</h2>
 
-        <form action="{{ route('admin.news.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6" id="newsForm">
+        @if ($errors->any())
+<div style='background-color:#fee2e2; border-left:4px solid #ef4444; padding:15px; margin-bottom:20px; border-radius:4px;'>
+<h3 style='color:#b91c1c; font-weight:bold; margin-bottom:10px;'>Gagal menyimpan! Periksa error berikut:</h3>
+<ul style='list-style-type:disc; padding-left:20px; color:#b91c1c;'>
+@foreach ($errors->all() as $error)
+<li>{{ $error }}</li>
+@endforeach
+</ul>
+</div>
+@endif
+<form action="{{ route('admin.news.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6" id="newsForm">
             @csrf
 
             <div>
@@ -90,7 +100,7 @@
                     </label>
                     <span class="text-[11px] text-gray-500">Gunakan toolbar untuk sub-judul, teks tebal, &amp; poin list</span>
                 </div>
-                <textarea name="content" id="article_content_input" class="hidden" required>{{ old('content') }}</textarea>
+                <textarea name="content" id="article_content_input" class="hidden">{{ old('content') }}</textarea>
                 <div id="quill-editor" class="bg-white">
                     {!! old('content') !!}
                 </div>
@@ -157,3 +167,5 @@
     });
 </script>
 @endpush
+
+

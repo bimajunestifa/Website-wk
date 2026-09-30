@@ -45,6 +45,7 @@ class FrontendController extends Controller
         $characterCards = HomeFeatureCard::where('section', 'karakter')->where('is_active', true)->orderBy('order', 'asc')->get();
         $cultureCards = HomeFeatureCard::where('section', 'budaya')->where('is_active', true)->orderBy('order', 'asc')->get();
         $learningCards = HomeFeatureCard::where('section', 'pembelajar')->where('is_active', true)->orderBy('order', 'asc')->get();
+        $teladans = HomeFeatureCard::where('section', 'teladan')->orderBy('order', 'asc')->get();
 
         return view('beranda', compact(
             'sliders',
@@ -61,7 +62,8 @@ class FrontendController extends Controller
             'news',
             'characterCards',
             'cultureCards',
-            'learningCards'
+            'learningCards',
+            'teladans'
         ));
     }
 
@@ -194,4 +196,5 @@ class FrontendController extends Controller
         return back()->with('success', 'Pesan Anda berhasil dikirim! Tim SMK Wikrama 1 Garut akan segera menghubungi Anda.');
     }
 }
+
 
